@@ -332,4 +332,70 @@ footer {
     color: var(--primary);
     font-weight: 700;
 }
+/* أضف هذه الأنماط في نهاية ملف style.css */
 
+.fan-arts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.fan-arts-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .fan-arts, .fan-arts-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+.fan-art-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 15px;
+    transition: var(--transition);
+}
+
+.fan-art-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.fan-art-img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.fan-art-caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.see-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.see-more-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* أنماط إضافية لصفحة photos.html */
